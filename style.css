@@ -1,0 +1,74 @@
+html, body {
+margin: 0;
+padding: 0;
+font-family: "Work Sans", sans-serif;
+font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-blue: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    background: var(--light-pink);
+}
+
+.bg {
+    max-width: 100%;
+    min-height: 320px;
+    background: url(assets/images/background-pattern-desktop.svg);
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    max-width: 550px;
+    background: white;
+    position: relative;
+    top: -100px;
+    padding: 0 2rem;
+    border-radius: 10pxl
+}
+
+.header {
+    display: flex;
+}
+
+.header-icon {
+    background: url(assets/images/icon-star.svg);
+    width: 40px;
+    height: 41px;
+    margin: auto 0;
+    margin-right: 30px;
+}
+
+.header > p {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+}
+
+.main > p {
+    width: max-content;
+    /* make it 22ch for smaller screens idiot */
+}
+
+.icon {
+    background: url(assets/images/icon-plus.svg);
+    width: 30px;
+    height: 31px;
+    margin: auto 0;
+}
