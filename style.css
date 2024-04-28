@@ -36,7 +36,8 @@ body {
     position: relative;
     top: -100px;
     padding: 0 2rem;
-    border-radius: 10pxl
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .header {
@@ -56,19 +57,54 @@ body {
     font-weight: 700;
 }
 
+.data {
+    margin-top: -20px;
+}
+
 .main {
     display: grid;
     grid-template-columns: 1fr 0fr;
 }
 
-.main > p {
-    width: max-content;
-    /* make it 22ch for smaller screens idiot */
+.main:hover {
+    cursor: pointer;
+    
+    p {
+        color: hsl(273, 42%, 51%);
+    }
 }
+
+.main > p {
+    /* make it 22ch for smaller screens idiot */
+    font-weight: 600;
+}
+
 
 .icon {
     background: url(assets/images/icon-plus.svg);
     width: 30px;
     height: 31px;
     margin: auto 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub {
+    display: block;
+    max-height: 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    color: var(--grayish-blue);
+}
+
+.active {
+    max-height: 150px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 580px){
+    .wrapper {
+        padding: 0 1rem;
+        margin: 0 1rem;
+        padding-bottom: 20px;
+    }
 }
