@@ -79,6 +79,9 @@ body {
     font-weight: 600;
 }
 
+.icon.first {
+    background: url(assets/images/icon-minus.svg);
+}
 
 .icon {
     background: url(assets/images/icon-plus.svg);
