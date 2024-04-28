@@ -10,7 +10,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/easybanklandingpage-r-oc6Oah1r)
+- [Solution URL](https://www.frontendmentor.io/solutions/faqaccordion-with-simple-html-css-and-js-WOoNcZnQgH)
 - [Live Site URL](https://gamesdst.github.io/faq-accordion/)
 
 ### Built with
